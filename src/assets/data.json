@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Buenos Aires"       
+    },
+    {
+        "id": 2,
+        "name": "Cordoba"
+    },
+    {
+        "id": 3,
+        "name": "Catamarca"
+    },
+    {
+        "id": 4,
+        "name": "Chaco"
+    },
+    {
+        "id": 5,
+        "name": "Chubut"
+    },
+    {
+        "id": 6,
+        "name": "Corrientes"
+    },
+    {
+        "id": 7,
+        "name": "Entre Ríos"
+    },
+    {
+        "id": 8,
+        "name": "Jujuy"
+    },
+    {
+        "id": 9,
+        "name": "Mendoza"
+    },
+    {
+        "id": 10,
+        "name": "Neuquén"
+    }
+]
