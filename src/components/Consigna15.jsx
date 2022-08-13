@@ -7,23 +7,9 @@ const Consigna15 = () => {
     const [data, setData] = useState(dataJson)
     const [mostrarResultado, setMostrarResultado] = useState(false)
 
-    const [editarBtn, setEditarBtn] = useState(false)
-
     const eliminarPersona = (id) => {
         console.log('eliminarPersona', id)
         setData([...data].filter(persona => persona.id !== id))
-    }
-
-    const editarPersona = (id) => {
-        console.log('editarPersona', id)
-        let persona = data.find(person => person.id === id)
-        // console.log(persona)
-        setEditarBtn(!editarBtn)
-    }
-
-    const confirmarPersona = (id) => {
-        console.log('confirmarPersona', id)
-        setEditarBtn(!editarBtn)
     }
 
     return (
@@ -34,8 +20,8 @@ const Consigna15 = () => {
 
             <button
                 onClick={() => setMostrarResultado(!mostrarResultado)}
-                style={{ marginBottom: 25 }}
-            >Mostrar resultados</button>
+                style={{ marginBottom: 25 }}>
+                Mostrar resultados</button>
             {
                 mostrarResultado
                     ? data.map(persona => {
@@ -47,16 +33,6 @@ const Consigna15 = () => {
 
                                 {/* contenendor botones */}
                                 <div className='contenedor-btn'>
-
-                                    {
-                                        editarBtn
-                                            ? <button
-                                                onClick={() => confirmarPersona(persona.id)}
-                                                className='btn confirmar'>confirmar</button>
-                                            : <button
-                                                onClick={() => editarPersona(persona.id)}
-                                                className='btn editar'>editar</button>
-                                    }
 
                                     <button
                                         onClick={() => eliminarPersona(persona.id)}
